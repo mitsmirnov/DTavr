@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Личный сайт студента Geekbrains</title>
+    <link rel="stylesheet" href=<?php echo get_template_directory_uri(); ?>/style.css">
+    
+   
+</head>
+
+<body>
+    <?php if (have_posts()) { while (have_posts()) { the_post(); ?>
+    <div id="header">
+        <a href="index.php">Главная</a> <span>/</span> <a href="Турция.html">Турция</a> <span>/</span> <a href="Бали.html">Бали</a>
+    </div>
+    <div id="content">
+        <h1>Личный сайт студента GeekBrains</h1>
+        
+<script type="text/javascript" src="simplebox_util.js"></script>
+<script type="text/javascript">
+(function(){
+var boxes=[],els,i,l;
+if(document.querySelectorAll){
+els=document.querySelectorAll('a[rel=simplebox]');	
+Box.getStyles('simplebox_css','simplebox.css');
+Box.getScripts('simplebox_js','simplebox.js',function(){
+simplebox.init();
+for(i=0,l=els.length;i<l;++i)
+simplebox.start(els[i]);
+simplebox.start('a[rel=simplebox_group]');			
+});
+}
+})();</script>
+       
+        <div id="center">
+          
+        <a href="javascript:void(0);" onmouseover="getElementById('miniatuyra2').src='img/1.jpg' width='800' height='600';" 
+	onmouseout="getElementById('miniatuyra2').src='img/1.jpg' width='400' height='300';"><img src="img/1.jpg" width='400' height='300'id="miniatuyra2" /></a>
+            
+           
+   
+<a rel="simplebox" href="img/2.jpg">
+<img src="<?php echo get_template_directory_uri(); ?>/img/2.jpg" width="400" height="300" alt="photo"></a>
+	
+ <a rel="simplebox" href="img/3.jpg">
+<img src="<?php echo get_template_directory_uri(); ?>/img/3.jpg" width="400" height="300" alt="photo"></a>
+  
+   <a rel="simplebox" href="img/4.jpg">
+<img src="img/4.jpg" width="400" height="300" alt="photo"></a>
+           
+    <a rel="simplebox" href="img/5.jpg">
+<img src="img/5.jpg" width="400" height="300" alt="photo"></a> 
+                        
+       <a rel="simplebox" href="img/6.jpg">
+<img src="img/6.jpg" width="400" height="300" alt="photo"></a>                            
+                                                           
+            
+                </div>
+
+    </div>
+ </div>
+    <?php }} ?>
+  <div id="footer"> 
+    Copyright &copy; 2017 <a href="https://geekbrains.ru/" target = "_blank" > GeekBrains </a>
+    </div>
+</body>
+
+</html>

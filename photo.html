@@ -1,0 +1,49 @@
+<html>
+<head>
+
+
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+$(document).ready(function () {
+
+    $('td a').click(function () {
+
+        var o=$(this).parent();
+
+        var url=o.find('img').attr('src');
+
+        var html='<a href="#" class="clone"><img src="img/2.jpg" /></a>'
+
+        o.append(html);
+
+        o=o.find('.clone');
+
+        o.animate({width:'200%',height:'200%'});
+
+        o.click(function () {
+
+            $(this).remove();
+        });
+
+    });
+
+});
+
+</script>
+
+
+<img src="img/2.jpg" width="400" height="300" alt="photo"></a>
+
+
+  
+	
+ 
+	
+            
+                
+</body>
+</html>
